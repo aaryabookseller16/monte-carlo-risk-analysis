@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 
-def log_prices(prices: pd.DataFrame) -> pd.Series:
+def log_returns(prices: pd.DataFrame) -> pd.Series:
     if "adj_close" not in prices.columns:
         raise ValueError("Expected column 'adj_close'")
     
